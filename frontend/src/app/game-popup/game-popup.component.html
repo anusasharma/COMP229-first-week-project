@@ -1,0 +1,52 @@
+<div mat-dialog-actions style="min-height: 20px; !important; margin-left: 99%; margin-top: -31px">
+  <button mat-button mat-dialog-close>X</button>
+</div>
+
+  <h1 mat-dialog-title style="margin-top: 15px;">Enter Game Detail</h1>
+
+  <div mat-dialog-content >
+    <form [formGroup]="gameForm">
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label style="font-weight: bold">Booth Name:</label>
+        <input type="text" formControlName="boothName" class="form-control"/>
+                    <div *ngIf="f.boothName.touched && f.boothName.invalid"  class="invalid-feedback">
+                      <div *ngIf="f.boothName?.errors?.required">Booth Name is required</div>
+<!--                      <div *ngIf="f.boothName?.errors?.required">Booth Name is required</div>-->
+                    </div>
+      </div>
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label style="font-weight: bold">Price per hour:</label>
+        <input type="number" formControlName="pricePerHour" class="form-control"/>
+                    <div *ngIf="f.pricePerHour.touched && f.pricePerHour.errors" class="invalid-feedback">
+                      <div *ngIf="f.pricePerHour?.errors?.required">Price per hour is required</div>
+                    </div>
+      </div>
+
+      <div class="form-group" >
+        <label style="font-weight: bold">Special Feature:</label>
+        <label for="text"></label><textarea id="text" formControlName="specialFeature" class="form-control"></textarea>
+
+      </div>
+<br>
+      <div class="form-group">
+        <label class="image-upload-container btn btn-bwm">
+          <span style="font-weight: bold">Select Image:</span>
+          <input #imageInput
+                 type="file"
+                 accept="image/*" style="width: 225px;"
+                 (change)="processFile(imageInput)">
+        </label>
+      </div>
+
+
+      <!--          <div class="form-group">-->
+      <!--            <label style="font-weight: bold">Image</label>-->
+      <!--            <input type="password" formControlName="image" #password class="form-control"  />-->
+
+      <!--          </div>-->
+      <button type="submit" class="btn btn-primary" (click)="save()" style="position: relative;left: 59%; margin-top: 24px">Save</button>
+    </form>
+
+
+</div>
+

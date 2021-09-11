@@ -1,0 +1,13 @@
+<app-dashboard></app-dashboard>
+
+<div class="row col-lg-4 col-md-4 col-sm-4 du-news-date-box" style="display: flex; flex-wrap: wrap; margin-left: 4%;" >
+    <div *ngFor="let game of games; let i = index">
+      <img *ngIf="game.image" src="{{'http://localhost:3000/'+ game.image}}" style="width: 80px; height: 50px; margin-bottom: 8%;">
+      <p>Booth Name: {{game.booth_name}}</p>
+      <p>Price Per Hour: {{game.price_per_hour}}</p>
+      <p style="word-break: break-all;">Special Feature: {{game.special_feature}}</p>
+      <button class="btn btn-outline-success" mat-button (click)="openDialog(game)">{{game.status == 1 ? 'Stop':'Start'}}</button>
+
+      <div style="margin-top: 5%;font-weight: bold" *ngIf = "game.status == 1">{{displayTime(game)}}</div>
+    </div>
+  </div>

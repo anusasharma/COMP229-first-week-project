@@ -1,0 +1,84 @@
+li {
+  float: left;
+}
+
+.navbar{
+  background-color: palegoldenrod;
+  padding-bottom: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: black;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: initial;
+}
+
+.dropdown a:hover{
+  Background-color: gray;
+}
+
+a:hover{
+  Background-color: gray;
+}
+
+a:active{
+  Background-color: blue;
+}
+
+.closeBtn {
+  float: right;
+  margin-top: -45px;
+  padding-left: 3px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+
+//float: right;
+}
+
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  margin-top: 2px;
+  padding: 3px 7px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+.badge1 {
+  top: -10px;
+  left: -8px;
+  padding: 1px 4px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  position: relative;
+}

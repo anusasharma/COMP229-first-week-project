@@ -1,0 +1,52 @@
+.du-news-date-box {
+  margin-bottom: 39px;
+}
+
+.du-news-date-box > div {
+  background: #bb4148;
+  padding: 52px 40px 43px 40px;
+  overflow: hidden;
+  text-align: left;
+  margin: 3%;
+  width: 20%;
+}
+
+.du-news-date-box > div .badge {
+  padding: 0;
+  margin: 0;
+  width: 55px;
+  text-align: center;
+  border-radius: 0;
+  background: none;
+  float: left;
+  margin: 0 26px 20px 0;
+  font: bold 60px/36px 'Passion One';
+  color: #ffffff;
+}
+
+
+.du-news-date-box > div .badge span {
+  font-size: 36px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.du-news-date-box > div .badge strong {
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 15px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  display: block;
+}
+
+.du-news-date-box > div .badge strong img {
+  margin-left: 10px;
+}
+
+.du-news-date-box p {
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 8%;
+}
+
